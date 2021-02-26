@@ -1,0 +1,36 @@
+
+Incluir: 
+	extern
+
+	union
+
+	malloc
+	
+	valgrind ./etapa3 < entrada0.txt
+	
+	//programa para apontar a linha que gerou o erro de segmentação
+	gdb --args ./etapa
+		"vai entrar no gdb. Dentro do gdb digite:"
+		run < entrada0.txt
+		
+		
+	//usando o programa dot: Google: graphviz dot file format
+		// arquivo exemplo.dot
+		digraph {
+			0xAA ->0xBB;
+			0xAA [label="func1"];
+			0xBB [label="func2"];		
+		}
+		
+		//chamando o programa dot (pode sair em pdf tambem)
+		dot exemplo.dot -Tpng -o exemplo.png
+		
+		//usando python dos colegas
+		python txt_to_diag.py out.txt diag.dot
+		dot diag.dot -Tpng > diag.png
+		
+		
+		
+		
+	
+	

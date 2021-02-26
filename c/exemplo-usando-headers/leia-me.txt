@@ -1,0 +1,8 @@
+exemplo de compilação utilizando os arquivos:
+
+data.h - contém cabeçalho e protótipos das funções
+
+data.c - contém a implementação das funções
+
+main.c - contém uma aplicação que usa a Interface 
+	basta compilar esse arquivo da seguinte maneira: gcc data.c main.c -o main       
