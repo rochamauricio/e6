@@ -2,6 +2,8 @@
     git config --global --unset user.name
     git config --global --unset user.nickname
 
+    aaa
+
 # configuração inicial
     git config --global user.name "rochamauricio"
     git config --global user.nickname "rochamauricio"
