@@ -1,0 +1,177 @@
+	
+/*
+body{
+	background-color:red;
+	ou
+	background-image:url(../img/fundo.jpg);
+	background-repeat:no-repeat; poderia ser 
+	background-position: left ou center ou right // combinado com o segundo parametro top center bottom
+	background-attachment: fixed ou scroll
+	background-size: 300px 300px // 100% 100%
+	ou ainda com a estenografica
+	background: url(img/fundo.jpg) center center/100% 100% no-repeat fixed
+}
+
+*/
+
+
+*{
+	box-sizing:border-box;
+	font-size: 100%;
+}
+body{
+	margin-bottom: 200px;
+	margin-left:60px;
+  margin-bottom: 200px;
+}
+
+h1{
+	color:#00ff00;
+	text-shadow:2px 2px 4px red;
+	text-decoration:underline;	
+	font-size:40px;
+	font-family:cursive;
+}
+
+#conteudo1{
+	background-color:red;
+	width:300px;
+	height: 100px;
+	overflow:auto; /* visible, hidden, scroll*/
+}
+#conteudo1 p{
+	opacity:0.5; /* nivel de transparencia em porcentagem */
+}
+#bloco1{
+	background-color:#00ff00;
+	width:300px;
+	height:150px;
+	border-radius:20px;  /* Raio da borda arredondada. Ele aceita border-top-left-radius*/
+}
+#bloco2{
+	background-color:#00ff00;
+	width:300px;
+	height:150px;
+	border-radius:20px 50px;  /* Raio da borda arredondada. */
+}
+#bloco3{
+	background-color:#00ff00;
+	width:300px;
+	height:150px;
+	border-radius:20px 50px 100px 0px;  /* Raio da borda arredondada. */
+}
+#paragrafo1{
+	font-family:Arial, Times, "Times New Roman", serif; /* Se o nome tiver espaço coloca-se entre aspas duplas. Times, Arial, verdana, sans-serif */
+	font-variant: small-caps;				/*normal, small-caps */
+	font-weight:bold; /* normal, bold */
+	font-style:normal; /* normal, italic, oblique */
+	font-size: 1.5em; /*em px, ou unidades relativas: 1em = tamanho padrão do navegador que é 16px  */
+}	
+#paragrafo2{
+	font-family: 'Indie Flower', cursive;
+	font-size:1.5em;
+}	
+#cores1{
+	font-size:1.2em;
+	padding: 20px;
+	width:600px;
+	height:200px;
+	background-color:rgba(130, 21, 30, 1);  /* grey, red, blue... 140 nomes. CSS color names. E por códigos hexadecimais. E por RGB o quarto parametro é a opacidade */
+	color: hsl(100, 100%, 100%);
+}
+#cores2{
+	font-size:1.2em;
+	padding: 20px;
+	width:600px;
+	height:200px;
+	background: linear-gradient(to top right, rgba(255, 0, 0, 0), blue, green, yellow);   /* to right, left, top;  to top right /// Angulos: 80deg */
+	color: #fff;
+	
+}
+#cores3{
+	font-size:1.2em;
+	padding: 20px;
+	width:600px;
+	height:200px;
+	background: radial-gradient(red, green, blue) ;
+	color: #fff;
+	
+}
+#base{
+	background-color:green;
+	width:600px;
+	height:600px;
+}	
+#esquerda{
+	background-color:red;
+	width:300px;
+	height:300px;
+	float:left;
+}
+#direita{
+	background-color:blue;
+	width:300px;
+	height:300px;
+	float:right;
+}
+#conteudo2{
+	width:600px;
+	height: 600px;
+	background-color:grey;
+	position:relative; /* Esta é a div pai de texto1, essa instrução torna relativas as coordenadas da div filha */
+}
+#texto1{
+	width:500px;
+	background-color:green;
+	position:absolute; /* static, absolute, fixed */
+	left:0; /* coordenadas tbm podem ser right e bottom */
+	top:200px;
+}	
+#zueira{
+	border: 2px solid #ff0000; 
+	border-radius: 15px;
+	background:radial-gradient(white, blue, yellow, green);
+	color:#000;
+	width:100%;
+	height:100px;
+	position:fixed;
+	right:0;
+	bottom:0;
+}	
+#borda{
+	border-style:dotted;  /* dotted, dashed, solid, double, groove, ridge, inset, outset */
+	border-color:#ff0000;
+	border-left-color: blue;
+	border-right-color:blue;
+	border-bottom-style: double;
+	border-width: 10px;
+	/* border: solid 5px red */
+	/* outline faz qse tudo q o border faz, mas não edita lados individualmente*/	 
+	outline: solid 5px gray;
+	
+}	
+#conteudo3{
+	width:200px;
+	height:200px;
+	background-color: #ccf2ff;
+	transition-property:all;  /* width height all  */
+	transition-duration:2s; /* Sempre em segundos!*/
+	transition-timing-function: ease; /*Controla o ritmo da transição// ease: lenta rapida lenta // ease-in: começa lenta // ease-out: finaliza lenta// ease-in-out// linear*/
+	/* transition-delay:2s;  Tempo de espera para iniciar a transição. Tem que deixar o mouse parado em cima 2 segundos! */
+	/* Otimizando o código com a propriedade estenográfica: transition: width 2s linear 1s, height 2s linear // ou para todos: transition:all 2s linear*/
+}	
+/*Declarando pseudoclasse que controlará o estado do elemento quando passarmos o mouse por cima*/ 					
+#conteudo3:hover{
+	width:350px; 
+	height:350px;
+	background:radial-gradient(#ccf2ff, #80cbff, #1aa1ff, #002d4d);
+	/* A propriedade transition suaviza a transição de estado. */
+}
+
+	
+
+
+
+
+
+

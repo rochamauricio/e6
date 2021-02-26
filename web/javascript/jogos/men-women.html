@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html><head><title>Treino JS</title> 
+
+<script>
+
+</script>
+
+
+</head><body>
+
+
+Nome: <br><br>
+<input type="text" placeholder="digite o seu nome" id="nome"/>
+
+<br><br><br><br>
+
+
+Sexo:<br>
+<input type="radio" name="genero" value="masculino" id="masculino" onchange="check()"> masculino<br>
+<input type="radio" name="genero" value="feminino" id="feminino" onchange="check()"> feminino <br><br>
+
+
+<br><br>
+
+
+<div style="display:none" id="div-homem">
+<br><br>Escolha algumas opções: <br>
+	<input type="checkbox" name="op-masculino" value="gravata">Gravata<br><br>
+	<input type="checkbox" name="op-masculino" value="terno">Terno<br/><br/>
+	<input type="checkbox" name="op-masculino" value="bigode">Bigode<br/><br/>
+	<input type="checkbox" name="op-masculino" value="cavanhaque">Cavanhaque<br/><br/>
+</div>
+
+
+<div style="display:none" id="div-mulher">
+<br><br>Escolha algumas opções: <br>
+	<input type="checkbox" name="op-masculino" value="vestido">Vestido<br/><br/>
+	<input type="checkbox" name="op-masculino" value="bolsa">Bolsa<br/><br/>
+	<input type="checkbox" name="op-masculino" value="maquiagem">Maquiagem<br/><br/>
+	<input type="checkbox" name="op-masculino" value="brincos">Brincos<br/><br/>
+</div>
+
+
+
+
+
+
+
+<script>
+
+function selecHomem()
+{
+	document.getElementById("div-homem").style.display="block";
+}
+
+function selecMulher()
+{
+	document.getElementById("div-mulher").style.display="block";
+}
+
+// obtem opção selecionada
+
+function check()
+{
+	if( document.getElementById("masculino").checked == true )
+		document.getElementById("div-homem").style.display="block";
+	else
+		document.getElementById("div-homem").style.display="none";
+		
+	if( document.getElementById("feminino").checked == true )
+		document.getElementById("div-mulher").style.display="block";
+	else
+		document.getElementById("div-mulher").style.display="none";
+}
+
+</script>
+
+
+</body></html>
+

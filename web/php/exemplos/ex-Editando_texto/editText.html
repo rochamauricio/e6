@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<title>Basico</title>
+
+<style type = "text/css">
+form {
+  margin-top: 20px;
+  margin-left: 20px;   
+}
+</style>
+
+</head>
+
+
+<body>
+                            
+<form method="get" action = "editText.php">
+    <input name = "text_editable" type = "text" placeholder = "Digite um texto aqui"><br/><br/>
+
+    Digite o tamanho do texto: 
+    <select name = "text_size">
+        <option value = "8px">8 px</option>
+        <option value = "12px">12 px</option>
+        <option value = "42px">42 px</option>
+        <option value = "72px">72 px</option>    
+    </select><br/><br/>
+
+    Escolha uma cor: <input name = "text_color" type = "color"><br/><br/>                         
+
+    <input type = "Submit" value = "Gerar Texto">
+</form>
+
+</body>     
+</html>

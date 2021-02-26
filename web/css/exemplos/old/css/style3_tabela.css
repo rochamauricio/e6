@@ -1,0 +1,42 @@
+﻿		#tabela1 , #tabela2
+		{
+		font-size: 20px;
+		background-color: #adc2eb;
+		border: 2px #ffffff solid;
+		}
+		table caption
+		{
+		background-color: #adc2eb;
+		border: 2px #ffffff solid;
+		}
+		table tr td
+		{
+		border: 2px #ffffff solid;
+		height: 40px;
+		width: 150px;
+		padding-left: 20px;
+		padding-right: 20px; 
+		}
+		td 
+		{
+		text-align:left;
+		}
+		th
+		{
+		border: 2px #ffffff solid;  <!--Obs se colocar border: none a borda some! -->
+		}
+		
+		/* Propriedade da mudança de cor da tabela   */
+		
+		#tabela1 td:hover
+		{
+			font-size: 20px;
+			border: 2px #ffffff solid;
+			background:radial-gradient(#ccf2ff, #80cbff, #1aa1ff, #002d4d);
+  		}
+		#tabela2 td:hover
+		{
+			font-size: 20px;
+			border: 2px #ffffff solid;
+			background:radial-gradient(#ccf2ff, #80cbff, #1aa1ff, #002d4d);
+  		}

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p>Accesso a objetos JavaScript:</p>
+
+<p id="demo"></p>
+
+<script>
+var myObj, x;
+myObj = { name: "fulano", age: 26, city: "Porto Alegre" };
+
+myObj.name = "Mauricio"; //modificando um valor (jeito 1)
+myObj["name"] = "Maumau"; //modificando um valor (jeito 2)
+nome = myObj.name;
+idade= myObj.age;
+cidade = myObj.city;
+
+var dados = "Nome: " + nome + ", Idade: " + idade + ", Cidade: " + cidade; 
+document.getElementById("demo").innerHTML = dados;
+</script>
+
+</body>
+</html>

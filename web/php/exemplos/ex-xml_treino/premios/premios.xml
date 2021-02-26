@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<premios>
+	<premio>
+		<ano>2020</ano>
+		<categ>SBC</categ>
+		<subcateg>Prêmio Mérito Cientifico</subcateg>
+		<info>Informações sobre o Prêmio Mérito Cientifico</info>
+	</premio>
+	<premio>
+		<ano>2019</ano>
+		<categ>FAPERGS</categ>
+		<subcateg>Pesquisador Gaúcho</subcateg>
+		<info>Informações sobre o Prêmio Pesquisador Gaúcho</info>
+	</premio>	
+</premios>
+
+
