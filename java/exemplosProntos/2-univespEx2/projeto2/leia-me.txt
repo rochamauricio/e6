@@ -1,0 +1,9 @@
+- Para compilar:
+Estando neste mesmo diretório do arquivo "leia-me" digite no shell:
+
+	javac Controle/RegistroContas.java
+	
+- Para executar o programa:
+Estando neste mesmo diretório do arquivo "leia-me" digite no shell:
+
+	java Controle/RegistroContas 

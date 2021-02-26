@@ -1,0 +1,62 @@
+Etapa 1
+Abra o Eclipse IDE, crie um projeto e dê a ele um nome de sua escolha;
+Crie uma classe chamada Cliente;
+Declare três atributos privados, chamados código, nome e cnpj, dos tipos int, String e String, respectivamente;
+Na classe Cliente, crie dois construtores: um sem parâmetro e outro que receba como parâmetros os três atributos;
+Crie os getters e setters de todos os atributos na classe Cliente;
+Crie o método toString() na classe Cliente, mas a String de retorno deve ser no seguinte formato: “Código do cliente: <código do cliente>, Nome: <nome do cliente>, CNPJ: <cnpj do cliente>".
+ 
+Etapa 2
+No mesmo projeto do passo 1, crie uma classe chamada Produto;
+Declare três atributos privados, chamados código, descrição e valor, dos tipos int, String e float, respectivamente;
+Crie dois construtores, um sem parâmetros e outro que receba todos os atributos como parâmetros;
+Crie os getters e setters para todos os atributos da classe Produto;
+Crie o método toString(), mas a String de retorno deve ser no seguinte formato: “Código do produto: <código do produto>, Descricao: <descrição do produto>, Valor: <valor do produto>”.
+ 
+Etapa 3
+No mesmo projeto, crie uma classe chamada ItemNotaFiscal;
+Na classe ItemNotaFiscal, declare três atributos, item, quantidade e produto, dos tipos int, int e Produto, respectivamente;
+Crie dois construtores, um sem parâmetros e um que receba todos os atributos como parâmetros;
+Crie os getters e setters de todos os atributos da classe ItemNotaFiscal;
+Declare o método toString() com a String de retorno no seguinte formato: “Item: <item>, Produto: <descrição do produto>, Quantidade: <quantidade>”.
+ 
+Etapa 4
+Crie uma classe chamada NotaFiscal;
+Declare três atributos privados, chamados codigo, data e cliente, dos tipos int, Date e Cliente, respectivamente;
+Declare mais um atributo privado chamado itens, mas do tipo List, utilizando como generic o tipo ItemNofaFiscal;
+Inicialize o atributo itens com o construtor da classe ArrayList, também utilizando a classe ItemNotaFiscal como generic;
+Crie dois construtores na classe NotaFiscal, um sem parâmetros e um que receba todos os parâmetros, exceto o parâmetro itens. Utilizaremos um método para manipular este último;
+Crie os getters e setters para todos os atributos da classe NotaFiscal;
+Crie um método público chamado calcularValor, que retorne um valor do tipo float. No corpo desse método, você deve usar uma estrutura de repetição para iterar sobre o atributo itens, calculando o valor da nota fiscal. A cada item, usar o cálculo “<quantidade do item> * <valor do produto>” para calcular o valor de um item e depois incrementar em um objeto local do tipo float, que será retornado ao final do método;
+Crie um método, também público, chamado inserirItem(), que receba um parâmetro do tipo itemNotaFiscal e, no seu corpo, utilize o método add(), a partir do objeto itens, para adicionar o objeto passado como parâmetro ao objeto itens;
+Crie o método toString() com a String de retorno no seguinte formato: “Código da Nota Fiscal: <codigo da nota fiscal>, Data: <data da nota fiscal>”;
+Crie um método público, chamado resumo() que, assim como o método toString(), retorne uma String, mas, desta vez, com o resumo da nota:
+No método resumo(), declare um objeto String, chamado resumo, e faça com que ele receba o valor do método toString(), concatenado com a String “\n”;
+Use uma estrutura de repetição para iterar sobre o objeto itens, que deverá concatenar ao objeto resumo o retorno do método toString() de cada item da lista, concatenando também a String “\n”;
+Após o laço de repetição, concatenar ao objeto resumo a String “Valor da Nota Fiscal: ” e a chamada ao método calcularValor();
+Então, retorne o valor armazenado no objeto resumo.
+ 
+Etapa 5
+Declare a classe Principal, contendo o método main();
+No método main():
+Declare um objeto do tipo Cliente, inicializando-o com o construtor da mesma classe;
+Carregue os atributos do cliente por meio do construtor ou dos métodos setters. Os valores são:
+Código: 100;
+Nome: “Lanchonete Salgado e Cia”;
+CNPJ: “200.200.0002/20”.
+Declare três objetos da classe Produto. Para cada um deles, você deverá carregar os seguintes atributos, seja pelo construtor ou pelos setters:
+Código: 110; Descrição: Milho; Valor: 4.00f;
+Código: 220; Descrição: Arroz; Valor: 5.00f;
+Código: 330; Descrição: Soja; Valor: 3.00f;
+Declare um objeto da classe NotaFiscal, inicializando-o com os valores:
+Código da nota: 1;
+Data (data atual): new Date();
+Cliente (objeto declarado em um passo anterior).
+Declare um objeto da classe ItemNotaFiscal com os seguintes atributos:
+Código do item: 1;
+Quantidade: 10;
+Produto: milho.
+Declare um objeto da classe ItemNotaFiscal com os seguintes atributos:
+Código do item: 2;
+Quantidade: 20;
+Produto: arroz.

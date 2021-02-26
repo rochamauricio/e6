@@ -1,0 +1,15 @@
+*** Relacionamento USA
+
+Por exemplo: um motorista de um ônibus, para executar o seu trabalho diário, depende (USA) de um ônibus
+
+De posse desse meio de transporte, o motorista pode desempenhar sua função, executando pequenas ações, como ligar, acelerar, 
+frear, virar para a direita, virar para a esquerda, executar marcha à ré e desligar o veículo.
+
+Outra situação que caracteriza o relacionamento USA, também chamado de dependência, é quando um objeto de uma 
+classe é instanciado dentro do corpo do método de uma outra classe.
+
+
+Ao estudarmos as situações citadas, podemos concluir que o relacionamento USA ocorre em duas situações:
+
+Existência de uma referência de um objeto de uma classe na lista de parâmetros de um método de outra classe;
+Existência de uma referência de um objeto de uma classe dentro de um método de outra classe.

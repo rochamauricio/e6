@@ -1,0 +1,3 @@
+queremos criar um metodo que ordene os empregados pelo id.
+
+para isso faremos com que a classe implemente a interface comparable

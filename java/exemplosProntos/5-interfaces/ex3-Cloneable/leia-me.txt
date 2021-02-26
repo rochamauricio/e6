@@ -1,0 +1,7 @@
+A classe Conta possui uma Data.
+
+Criamos na classe conta 2 tipos de métodos get para a Data:
+
+	- um que retorna uma referência para a data
+	
+	- um que retorna uma cópia da data 

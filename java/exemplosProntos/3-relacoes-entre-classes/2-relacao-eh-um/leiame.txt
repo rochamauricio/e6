@@ -1,0 +1,14 @@
+*** RELACIONAMENTO É-UM
+
+Um relacionamento entre classes pode caracterizar algumas possibilidades no âmbito da 
+análise da solução de desenvolvimento de um software. Dentre elas, temos o relacionamento É-UM, 
+que caracteriza que uma classe pode receber atributos e funcionalidades a partir de uma superclasse. 
+Já conhecemos esse conceito e o chamamos de herança
+
+As classes Aluno, Professor e Funcionário são especializações da classe Pessoa.
+
+- Generalização e Especialização: herança entre classes concretas e abstratas
+
+A herança de interface ocorre entre uma classe interface (classe genérica) e outra classe especializada, que implementa os métodos definidos na interface.
+
+

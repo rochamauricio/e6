@@ -1,0 +1,7 @@
+Neste exemplo temos uma hierarquia de classes:
+
+superclasses -> subclasses :
+
+Transporte -> Terrestre -> Automovel
+
+

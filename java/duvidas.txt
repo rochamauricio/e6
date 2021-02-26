@@ -1,0 +1,4 @@
+duvidas java:
+
+é comum utilizar mais de uma classe em um mesmo arquivo?
+ao instalar o Eclipse precisamos de uma instalação diferente pra cada versão ex: jee, jse, jme? 

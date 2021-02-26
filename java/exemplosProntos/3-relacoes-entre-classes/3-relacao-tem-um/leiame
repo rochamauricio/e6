@@ -1,0 +1,50 @@
+*** RELACIONAMENTO TEM UM
+
+O relacionamento TEM-UM pode ser similar ao relacionamento USA, mas seu propósito é indicar que um objeto é parte de outro 
+objeto.
+
+Um objeto Carro é composto pelos objetos Motor, Chassi, Portas e Pneus. Concorda?
+
+é um relacionamento de associação entre duas classes, na qual uma classe possui, nos seus atributos, referências para 
+um ou mais objetos de outra classe. 
+
+Na UML, o relacionamento TEM-UM possui variações na sua representação de modo a caracterizar as três formas de relacionamento 
+que são Associação, Agregação e Composição. A Agregação e a Composição são chamadas de relacionamento TODO-PARTE. 
+
+
+- Associação:
+Observe, no código, que o relacionamento Associação (TEM-UM) é implementado pela definição de um atributo 
+cliente (role) do tipo Cliente.
+
+- Agregação e Composição
+Existirá uma classe que funcionará como TODO enquanto uma ou mais classes funcionarão como PARTE.
+Os dois relacionamentos TODO-PARTE (Agregação e Composição) se diferenciam no modelo UML pela forma 
+de representação no diagrama. A representação é feita pelo losango que aponta para a classe que representa 
+o TODO e pela implementação do código que controla o ciclo de vida dos objetos envolvidos no relacionamento.
+
+**Na Agregação, quando o objeto TODO deixa de existir, o(s) objeto(s) PARTE continua(m) existindo.
+
+**Na Composição, quando o objeto TODO deixa de existir, o(s) objetos(s) PARTE também deixarão de existir. Observe, 
+no código, que o relacionamento composição (TEM-UM) é implementado pela definição de um atributo items (role) 
+que é uma referência para uma coleção ArrayList de ItemNotaFiscal.
+
+a diferença entre os dois relacionamentos ocorrerá no tratamento que é dado à classe TODO e à classe PARTE, 
+no que diz respeito ao seu ciclo de vida.
+
+Tanto a Composição como a Agregação são associações do tipo TODO-PARTE. Elas são implementadas de forma similar, 
+ou seja, por meio de um atributo, que é uma referência para uma coleção. A diferença se dá no tratamento da implementação 
+do código pertinente a cada associação.
+
+Na composição, quando a classe TODO é excluída, a classe PARTE também é excluída. Enquanto na agregação, quando a 
+classe TODO é excluída, a classe PARTE não é excluída.
+
+-- A principal diferença entre (agregação é composição) e associação é que associação costuma receber dados simples e as outras 2 trabalham com coleções
+
+
+
+
+
+
+
+
+
