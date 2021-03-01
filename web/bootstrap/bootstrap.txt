@@ -5,7 +5,13 @@
 <!-- www.youtube.com/watch?v=mVgrenJX5dI -->
 <!-- www.youtube.com/watch?v=ZYYaMN4m40c&list=PLBbHLUbqqCrTwIrdix6kl84m4OPE0JexR&index=3 -->
 
+# teoria
+> o bootstrap divide a tela em 12 partes
+
 # classes 
+
+container
+row
 
 ## grid 
 col-         <!-- extra small devices - screen width less than 576px* -->
