@@ -7,10 +7,10 @@
 /* www.youtube.com/watch?v=ZYYaMN4m40c&list=PLBbHLUbqqCrTwIrdix6kl84m4OPE0JexR&index=3 */
 ~~~
 
-# teoria
+# anotações
 
-> o bootstrap divide a tela em 12 partes
-> baixar bootstrap (getbootstrap.com): docs -> Compiled CSS and JS
+- o bootstrap divide a tela em 12 partes
+- baixar bootstrap (getbootstrap.com): docs -> Compiled CSS and JS
 
 # classes 
 
