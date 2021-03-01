@@ -10,6 +10,7 @@
 # teoria
 
 > o bootstrap divide a tela em 12 partes
+> baixar bootstrap (getbootstrap.com): docs -> Compiled CSS and JS
 
 # classes 
 
@@ -18,11 +19,11 @@
 ~~~css
 .container    /* */
 .row          /* */
-.col-         /* extra small devices - screen width less than 576px* */
-.col-sm-      /* small devices - screen width equal to or greater than 576px*  */
-.col-md-      /* medium devices - screen width equal to or greater than 768px*  */
-.col-lg-      /* large devices - screen width equal to or greater than 992px*  */
-.col-xl-      /* xlarge devices - screen width equal to or greater than 1200px*  */
+.col-         /* extra small devices - screen width less than 576px */
+.col-sm-      /* small devices - screen width equal to or greater than 576px */
+.col-md-      /* medium devices - screen width equal to or greater than 768px */
+.col-lg-      /* large devices - screen width equal to or greater than 992px */
+.col-xl-      /* xlarge devices - screen width equal to or greater than 1200px */
 ~~~
 
 ## display 
