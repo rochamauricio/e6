@@ -2,12 +2,10 @@
     git config --global --unset user.name
     git config --global --unset user.nickname
 
-
 # configuração inicial
     git config --global user.name "rochamauricio"
     git config --global user.nickname "rochamauricio"
     git config --global user.email "mauricio.mbr@gmail.com"
-
 
 
 # exemplo 1: criando um repositorio na minha máquina (repositório local) e inserindo os códigos no repositório remoto
