@@ -1,7 +1,11 @@
 # links http
-<getbootstrap.com/>
+
+getbootstrap.com
+
 www.w3schools.com/bootstrap4/
+
 www.youtube.com/watch?v=mVgrenJX5dI
+
 www.youtube.com/watch?v=ZYYaMN4m40c&list=PLBbHLUbqqCrTwIrdix6kl84m4OPE0JexR&index=3
 
 # classes 
