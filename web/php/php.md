@@ -5,6 +5,12 @@
 	http://www.writephponline.com/				// php online editor
 	http://br.phptherightway.com/				// guia muito bom 
 
+# utilizando o php em qualquer diretório
+~~~shell
+	#navegue ate o diretorio e execute o comando:
+	php -S localhost:8888
+~~~
+
 
 # Introducao
 
