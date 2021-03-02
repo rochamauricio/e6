@@ -1,5 +1,6 @@
-//Anotações - Geral
-
+# Anotações - Geral
+~~~c
+/*
 "Criadores: Ken Thompson & Dennis Ritchie"
 "C é uma linguagem estruturada e não se pode criar uma função dentro de outra."
 "Não utilizar variáveis globais em programação estruturada."
@@ -20,11 +21,12 @@
 
 "Modelo Declarativo: Linguagens não possuem o conceito de sequências de comandos."
  	"Paradigmas: Funcional, lógico"
+*/
+~~~
 
+# geral
 
-
-_____________________________________GERAL__________________________________________________________________
-
+~~~c
 //Compilar no Linux - jeito 1:
 
 gcc nomeArq.c  	//vai gerar a saída no padrao a.out 
@@ -39,13 +41,14 @@ gcc hello.c -o hello  	//gera a saída no arquivo hello
 
 //Tipos de dados, depende da arquitetura, para saber: sizeof( tipo )
 
+/*
 char 	1 byte
 int 	4 bytes	
 float 	4 bytes
 double 	8 bytes
 void
 x = sizeof( int ); //retorna numero de bytes da variavel x. Vale 4 na minha arquitetura atual
-
+*/
 
 //Modificadores: 
 
@@ -109,14 +112,14 @@ EOF		// marcador de fim de arquivo
 
 
 //Comando de seleção condicional dupla:  if… else:
-
+/*
 if( x >= 0 )  
    //comando, ou { comandos }
 else	
    //comando, ou { comandos }
+*/
 
-
-//Comando de seleção condicional múltipla: switch: Só com variável do tipo int, long, char
+// Comando de seleção condicional múltipla: switch: Só com variável do tipo int, long, char
 
 switch ( variavel ) {  
    case 1: /*comandos*/ break;
@@ -174,10 +177,10 @@ int main( int argc, char *argv[ ] ) {
 		printf( "Parametro %d = %s\n", i, argv[ i ] );	
 	return 0;
 }
+~~~
 
-
-_____________________________________ARRANJOS_______________________________________________________________
-
+# arranjos
+~~~c
 
 // Arranjos de uma dimensão: Vetores
 
@@ -189,25 +192,28 @@ int idades[ 3 ] = { 1, 2, 3 };	// declarando e inicializando ao mesmo tempo
 int x[ 50 ] = { 0 }; 			// zera elementos de índice 0 a 49
 int x[ 5 ] = { 10, 20, 30 };  	// posições não inicializadas são preenchidas com zero
 
+~~~
 
 
-// Vetores de caracteres: Strings
-
+# Vetores de caracteres: Strings
+~~~c
+/*
 "Strings em C são vetores de caracteres."
 "Cada caractere é um char."
 "O último caractere deve ser obrigatóriamente o delimitador de fim de String: \0"
 "O caractere \0 é o primeiro da tabela ASCII."
 "As strings são representadas entre aspas duplas e os caracteres entre apóstrofos. "A" e 'A' NÃO são a mesma coisa!! "A" é um vetor de 2 caracteres: 'A' e '\0' e 'A' é um único caractere."
-
+*/
 char nome[ 15 ] = "Mauricio";			// inicializando string
 char nome[ 15 ] = { 'A', 'n', 'a' };	// inicializando string.
 char nome[ ] = { 'A', 'n', 'a' };		// automaticamente nome é criado com tamanho 4 (3 letras + \0)
 char nome[ 15 ]; scanf( "%s", nome );	// leitura de String com scanf é sem o '&'. Não pega espaços!
 char nomes[ 2 ][ 50 ] = { "Mauricio", "Joana" } ;	// printf( "%s\n", nomes[ 1 ] );
+~~~
 
 
-
-// Strings - Funções de manipulação
+# Strings - Funções de manipulação
+~~~c
 
 char caractere = getchar();		// lê um caractere do teclado
 gets( nome );					// lê uma String declarada, por ex. como char nome[ 15 ];
@@ -239,15 +245,16 @@ int main()
     return 0;
 }
 
+~~~
 
 
 
 
+# Arranjos de várias dimensões
+~~~c
 
-// Arranjos de várias dimensões
-
-"Os elementos da diagonal principal da matriz quadrada são os que temos a linha i igual a coluna j."
-"Uma matriz esparsa é uma matriz que tem aproximadamente 2/3 de seus elementos iguais a zero."
+// "Os elementos da diagonal principal da matriz quadrada são os que temos a linha i igual a coluna j."
+// "Uma matriz esparsa é uma matriz que tem aproximadamente 2/3 de seus elementos iguais a zero."
 
 float notas[ 2 ][ 3 ];								// matriz de 2 linhas e 3 colunas
 float notas[ 2 ][ 3 ][ 5 ];							// matriz com 3 dimensões
@@ -260,13 +267,13 @@ for( i = 0; i < 2; i++ )
 	for( j = 0; j < 3; j++ )
 		printf( "%d ", x[i][j] );
 
+~~~
 
 
 
-
-_____________________________________FUNÇÕES________________________________________________________________
-
-
+# funções
+~~~c
+/*
 "Uma função deve executar apenas uma tarefa específica." 
 "Protótipo de funções antes da main ou no arquivo .h" 
 "Implementação da função após a main." 
@@ -274,7 +281,7 @@ _____________________________________FUNÇÕES__________________________________
 "Parâmetros reais (argumentos): os que aparecem entre () quando chamamos a função."
 "Parâmetros reais (ou argumentos) devem concordar em número e tipo com os formais, na ordem definida."
 "Variáveis declaradas dentro do subprograma são chamadas variáveis locais."
-
+*/
 
 // Funções sem retorno void: (com ou sem parâmetros) Se inserirmos um 'return;' ele apenas encerra a função void.
 void uppercase( char c ) { // obs.: parâmetro passado por valor. 
@@ -297,12 +304,13 @@ void troca( int *x, int *y ) { // chamar a função: troca( &a, &b );
 	*x = *y;
 	*y = temp;	
 }  
+~~~
 
 
+# ponteiros
 
-_____________________________________PONTEIROS______________________________________________________________
-
-
+~~~c
+/*
 "Ponteiros são variáveis que apontam para uma posição na memória."
 "Um ponteiro contém o endereço da posição de memória."
 "O asterisco indica que a variável armazena um endereço de memória, cujo conteúdo é do tipo especificado."
@@ -332,7 +340,7 @@ _____________________________________PONTEIROS__________________________________
 " **v é a mesma coisa que v[][]"
 " *( *(v + i) + j ) é a mesma coisa que v[ i ][ j ]"
 
-
+*/
 
 // exemplo
 int *a, *b, *c;			// declaraçã de ponteiro
@@ -401,17 +409,13 @@ void trocaEspaco( char nome[] ) {		// chamar a função: trocaEspaco( nomeString
 			nome[ i ] = '*';
 }
 
+~~~
 
 
 
-
-
-
-
-
-_____________________________________ESTRUTURAS_____________________________________________________________
-
-
+# Estruturas
+~~~c
+/*
 
 "Tipos simples em C: char, int, float, double, ponteiros."
 "Tipos estruturados em C: arranjos, estruturas, arquivos."
@@ -426,7 +430,7 @@ _____________________________________ESTRUTURAS_________________________________
 "Operador seta: Para funções com parâmetro do tipo estrutura, onde ponteiros devem ser utilizados."
 	"p->nome é o mesmo que (*p).nome"
 
-
+*/
 
 // Declaração de uma estrutura
 typedef struct pessoa {
@@ -480,16 +484,15 @@ typedef struct pessoa {
 // Inicializando
 PESSOA p1 = { "Mauricio", { 15, 01, 1992 }  };
 
+~~~
 
 
 
 
+# coisas interessantes
 
-_____________________________________COISAS_INTERESSANTES___________________________________________________
 
-
-//_____________________________________________________  
-
+~~~c
 // Função lê_texto - do professor Anderson
 /* A função le_texto.h recebe como parâmetros uma variável string a ser preenchida por leitura e o sizeof desta variável. O conteúdo digitado é lido em uma variável dummy, contendo 1 caractere a mais que a variável parâmetro. Assim, se o penúltimo caractere lido não for o '\n' isto significa que o número de caracteres digitados ultrapassou o tamanho da variável a ser lida */
 #include <stdio.h>
@@ -602,14 +605,12 @@ int main() {
 	return 0;
 }
 
+~~~
 
 
+# Algumas diretivas de compilação
 
-//_____________________________________________________
-
-
-// Algumas diretivas de compilação
-
+~~~c
 //São comandos que não são compilados. 
 //São dirigidos ao pré-processador, executado pelo compilador antes da execução do processo de compilação propriamente dito. Veja mais em https://pt.wikibooks.org/wiki/Programar_em_C/Pr%C3%A9-processador
 //São elas:
@@ -648,20 +649,4 @@ Se o arquivo ainda não tiver sido incluído, ao chegar na primeira linha do arq
 #elif
 #endif
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+~~~

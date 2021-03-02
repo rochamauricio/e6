@@ -2,6 +2,7 @@
 	https://www.w3schools.com/sql/default.asp
 
 
+# anotações
 ~~~sql
 
 -- comentario de uma linha
