@@ -55,7 +55,7 @@
 ```
 
 # imagens
-![descricao da imagem](/img/tux.png)
+![descricao da imagem](https://github.com/rochamauricio/e6/blob/master/markdown/img/tux.png)
 
 # tabelas
 | Nome | Curso | Formatura |
