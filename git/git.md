@@ -174,7 +174,7 @@
 
 - exemplos do email do professor gastal:
     - 1) Colocar os três "cards" abaixo em Important Dates:
-    - 2) Colocar logotipos do INF e UFRGS (em anexo) em um novo <h2> chamado "Support", abaixo de "Our Sponsors";
+    - 2) Colocar logotipos do INF e UFRGS (em anexo) em um novo h2 chamado "Support", abaixo de "Our Sponsors";
     - 3) "Esconder" (comentar no HTML) as regiões do site onde ainda não temos conteúdo (Invited Speakers & Menus sem links)
     - 4) Colocar logotipo da SBC ...
 
