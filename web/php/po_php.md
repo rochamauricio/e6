@@ -1,13 +1,13 @@
-<?php // links ?>
+# links 
 
-http://php.net/manual/pt_BR/  				<? // documentação do php ?>
-https://www.w3schools.com/php/default.asp  	<? // guia muito bom ?>
-http://www.writephponline.com/				<? // php online editor ?>				
-http://br.phptherightway.com/				<? // guia muito bom ?>
+http://php.net/manual/pt_BR/  				// documentação do php 
+https://www.w3schools.com/php/default.asp  	// guia muito bom 
+http://www.writephponline.com/				// php online editor		
+http://br.phptherightway.com/				// guia muito bom 
 
-<?php
 
-********************************************************************************************** Introducao
+# Introducao
+~~~php
 
 // tipo objeto
 class Pessoa {
@@ -32,16 +32,4 @@ $bool = is_subclass_of($obj,'umaClass');// retorna true se o objeto pertencer a 
 $bool = method_exists($obj,'metodo');	// retorna true se objeto possui o metodo 
 call_user_func(array($obj, 'metodo'));	// executa o metodo da classe
 
-
-
-?>
-
-
-
-
-
-
-
-
-
-
+~~~

@@ -1,15 +1,14 @@
-<?php // links ?>
+# links
 
-https://www.w3schools.com/php/default.asp  	<? // guia muito bom ?>
-http://php.net/manual/pt_BR/  				<? // documentação do php ?>
-http://www.writephponline.com/				<? // php online editor ?>				
-http://br.phptherightway.com/				<? // guia muito bom ?>
+	https://www.w3schools.com/php/default.asp  	// guia muito bom
+	http://php.net/manual/pt_BR/  				// documentação do php
+	http://www.writephponline.com/				// php online editor
+	http://br.phptherightway.com/				// guia muito bom 
 
 
-<?php 
+# Introducao
 
-********************************************************************************************** Introducao
-
+~~~php 
 // incluindo arquivos php externos:
 include_once 'biblioteca.php'; 	#include, require, include_once, require_once
 bomDia(); 						#função declarada em biblioteca.php 
@@ -151,8 +150,11 @@ foreach( $frutas as $valor )
 	// Aborta a execução de um bloco de comandos. Pode usar: break <quantidade de níveis>
 
 
-********************************************************************************************** Funções
+~~~
 
+# Funções
+
+~~~php
 // manipulação de funções
 function calculo_imc( $peso, $altura )
 {
@@ -220,10 +222,10 @@ function fatorial ( $numero )
     else
         return $numero * fatorial($numero - 1);
 }	
+~~~
 
-
-********************************************************************************************** Arquivos
-
+# Arquivos
+~~~php
 // lendo o arquivo usando fgets
 $arq = fopen("arquivo.txt", "r"); // "r", "w", "a", "wb"
 while(!feof($arq) )
@@ -258,8 +260,6 @@ foreach( $arquivo as $valor)
 $arqOrigem = "teste1.txt";
 $arqDestino = "copiaTeste1.txt";
 copy( $arqOrigem, $arqDestino ); // retorna TRUE se sucesso
-
-
 
 // renomeando arquivos ou diretórios usando rename
 $origem = "teste1.txt";
@@ -299,9 +299,10 @@ opendir($diretorio); 		//Abre diretório
 closedir($diretorio); 		//Fecha diretório
 readdir(opendir('/'));		//le conteudo do diretorio usando o identificador criado por opendir()
 
+~~~
 
-********************************************************************************************** Strings
-
+# Strings
+~~~php
 // declaracao
 $var1 = "biscoitinho"; 	// string entre aspas duplas são avaliadas pelo php
 $var2 = 'beterraba';  	// string entre aspas simples não são avaliadas pelo php!
@@ -346,9 +347,11 @@ print ord('a');	// printa o numero do caractere ASCII 'a'
 
 print strrev($uma_str); //inverte string
 
+~~~
 
 
-********************************************************************************************** Arrays
+# Arrays
+~~~php
 // nao precisa ter todos elementos do mesmo tipo
 
 // criando um array
@@ -428,9 +431,10 @@ $uma_string = implode('*', $vetor);	// converte vetor em string usando o separad
 $vetor = range(0, 1, 0.1); 			// preenche o vetor com 0, 0.1, 0.2, ..., 1
 unset($vetor[2]); 					// desaloca a memoria do vetor de indice 2
 
+~~~
 
-********************************************************************************************** funcoes de data
-
+# funcoes de data
+~~~php
 // obtendo a data num determinado formato - mais em: http://php.net/manual/pt_BR/function.date.php
 gedgdate_default_timezone_set('America/Sao_Paulo'); 
 $date = date("l - d / m / Y");  
@@ -438,19 +442,15 @@ $hour = date("H : i : s ");
 echo "Data: $date <br/>";
 echo "Hora: $hour"; 
 
+~~~
 
 
-********************************************************************************************** Outras funcoes prontas
+# Outras funcoes prontas
 
+~~~php
 // POST
 $artista = $_POST['artista'];
 
 if(isset($artista)) { ... } // verifica se $artista foi preenchido corretamente??? pg 168 livro PHP Pablo Dall'Oglio
 
-
-
-?>
-
-
-
-
+~~~
