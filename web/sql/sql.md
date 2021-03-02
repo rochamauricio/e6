@@ -1,7 +1,8 @@
-/* alguns links:
+# alguns links:
 	https://www.w3schools.com/sql/default.asp
-*/
 
+
+~~~sql
 
 -- comentario de uma linha
 /* comentário de várias linhas */
@@ -37,7 +38,7 @@
 	
 	-- exemplo
 	DELETE FROM produtos WHERE venda <= "0.5"; -- exclui todos produtos cujo valor de venda é menor que 0.5
-
+~~~
 
 
 
