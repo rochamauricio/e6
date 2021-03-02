@@ -142,13 +142,17 @@
     # realizo as modificações nos arquivos aqui ...
     
     # crio uma branch
-    git branch nome-da-branch
-    git checkout nome-da-branch
+    # git branch nome-da-branch
+    # git checkout nome-da-branch
 
     git add *
     git commit -m "Descricao das alteracoes feitas"
     
-    git push origin nome-da-branch 
+    # pull
+    # merge
+
+    # so com versao que nao quebre o site
+    git push origin master 
 ~~~
 
 ## Na segunda vez em diante eu sigo este fluxo?
@@ -157,12 +161,12 @@
     
     # realizo as modificações nos arquivos aqui ...
 
-    git branch nome-da-branch
-    git checkout nome-da-branch
+    #git branch nome-da-branch
+    #git checkout nome-da-branch
     
     git add *
     git commit -m "Descricao das alteracoes feitas"
-    git push origin nome-da-branch
+    git push origin master
 ~~~
 
 
