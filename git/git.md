@@ -130,6 +130,7 @@
 [ver](https://www.youtube.com/watch?v=CGTsIz5t0eY)
 
 
+# dúvidas
 
 ## Na primeira vez sigo este fluxo?
 ~~~shell
@@ -165,7 +166,7 @@
 ~~~
 
 
-# dúvidas
+## outras dúvidas
 
 - Em que situações e com que frequência eu crio uma branch? A cada nova alteração?
 - Fazer pequenos commits e um push uma vez só numa branch?
