@@ -1,21 +1,35 @@
 # apostila - python versão 3.7
 
-"""
-	comandos no Shell:
+# anotações
+	extensão arquivos python: .py
+
+# comandos no Shell:
+~~~shell
 	# versão
 	python -V
 
-	#digite: 
+	# executar python no terminal
 	python
 	>>> comandos aqui
 	>>> exit() #sai do python
+
+	# executar um programa:
+	python nomePrograma.py			
+~~~
+
+
+
+# instruções do python
+
+~~~python
+
+"""
+comentarios de várias linhas
 """
 
 '''
-	executar um programa:
-	python nomePrograma.py			
+comentarios de várias linhas
 '''
-
 
 
 # caracteres de escape
@@ -107,6 +121,7 @@ nomes.count("Mauricio")					# conta quantas vezes mauricio aparece na lista
 print nomes[0]							# printa primeiro elemento da lista
 print "Mauricio" in nomes				# printa true se "Mauricio" pertencer à lista nomes - in é um operador!
 
+~~~
 
 
 parei em 12.2
