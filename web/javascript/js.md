@@ -1,17 +1,19 @@
-// JavaScript
-
-// links
+# links
 	// http://devfuria.com.br/javascript/manipulando-combobox-select-com-javascript/ 
 
 
-// criar variáveis: é uma boa prática iniciar as variáveis com o tipo de dados que elas vão armazenar
-	var nome="";
-	let contador=0; // só é acessível nos blocos de código em que for declarada
+# criar variáveis 
+> é uma boa prática iniciar as variáveis com o tipo de dados que elas vão armazenar
+~~~javascript
+var nome="";
+let contador=0; // só é acessível nos blocos de código em que for declarada
 
 // tipo de variaveis
 x = typeof y; // retorna o tipo de y
-	
+~~~
 
+# diversos
+~~~javascript
 // avaliar uma expressão entre parênteses:
 x = eval( "2 + 3" );
 alert( x ); // printa 5
@@ -21,17 +23,14 @@ alert( x ); // printa 5
 if( isNaN( "bolacha" ) )
   alert( "Isso não é um número" );  
 
-	
 // converter uma string em inteiro
 valor = "27";
 valor = parseInt( valor );
 alert( valor + 1 );
 
-
 // converter uma string em um float:
 valor = parseFloat( "124.5" );
 alert( valor + 1 );
-
 
 // converte string em inteiro na base decimal, hexa, bin, etc
 valor = parseInt( "100", 10 );	// lê como decimal: salva 100 em valor
@@ -59,9 +58,11 @@ x.toFixed(6);           // returns 9.656000
 
 // convertendo uma data em um número
 Number(new Date("2017-09-30"));    // returns 1506729600000
+~~~
 
 
-// eventos: 
+# eventos
+~~~javascript
 onblur = alert("oi"); 		// onblur: Ocorre quando o usuário retira o foco de um objeto de formulário. // exemplo legal: <input type="text" onfocus="this.value='Mauricio Barbosa da Rocha'"> 
 onselect = alert("oi");		// onselect: Ocorre quando o usuário seleciona um elemento de um formulário.
 onfocus = alert("oi"); 		// onfocus: Ocorre quando o usuário focaliza o objeto.
@@ -77,9 +78,11 @@ onkeypress = alert("oi");	// onkeypress: Ocorre quando uma tecla é pressionada.
 onkeyup = alert("oi");		// onkeyup: Ocorre quando o usuário solta uma tecla. 
 onload = alert("oi");		// onload: Ocorre quando o usuário carrega a página.
 onsubmit = alert("oi");		// onsubmit: Ocorre quando o usuário envia um formulário.
+~~~
 
-
-// string methods and properties - all string methods return a new string. They don't modify the original string.
+# string methods and properties 
+> all string methods return a new string. They don't modify the original string.
+~~~javascript
 var texto = "Mauricio";
 var tam = texto.length;
 var pos = texto.indexOf('Mauricio');	// posição da primeira ocorrencia de Mauricio na string. Se não encontar retorna -1
@@ -102,9 +105,10 @@ var res = str.trim(); 				// remove espaços do início e do fim da string
 var res = str.charAt( 0 );			// retorna a primeira letra da string str
 var res = str.charCodeAt( 0 );      // retorna o valor unicode do caractere de posição 0
 var arr = str.split(",");  			// converte string str no array arr
+~~~
 
-
-// arrays
+# arrays
+~~~javascript
 var nomes = []; 								// cria array (inicializa com zero), não usar var nomes = new Array();
 var nomes = [ "Mauricio", "Maria", "Joana" ];	// cria e inicializa array, outro jeito (não recomendável): nomes = new Array( "mauricio", "maria", "joana" ); 
 var notas[ 0 ] = 10;							// inicializa primeiro elemento
@@ -136,9 +140,11 @@ cars.sort(function(a,b){return a.year - b.year});			// sorting object arrays
 numbers.forEach( myFunction ); 								// iterador foreach - ver exemplo - The forEach() method calls a function (a callback function) once for each array element. - - mais informaçoes(inclusive sobre Array.map(), Array.filter(), Array.reduce(), Array.every(), Array.some(), Array.indexOf(), Array.find(), Array.findIndex()) em: https://www.w3schools.com/js/js_array_iteration.asp
 var indice = fruits.indexOf("Apple");			// retorna o índice de "Apple" no array fruits - Array.indexOf() returns -1 if the item is not found.
 var indice = fruits.lastIndexOf("Apple");		// retorna o indice da última ocorrência de apple no array fruits
+~~~
 
-
-// bjeto Date - JavaScript counts months from 0 to 11. 
+# objeto Date 
+> JavaScript counts months from 0 to 11. 
+~~~javascript
 var hoje = new Date(); 								// atribui ao objeto a data e hora correntes  
 var data = new Date( 2019, 10, 18 ); 				// 18 de Novembro de 2019
 var data = new Date( 2019, 10, 18, 15, 16, 22 );	// 18 de Novembro de 2019 15:16:22 
@@ -167,9 +173,10 @@ hoje.setDate( hoje.getDate() + 50); 			// The setDate() method can be used to ad
 	var date3 = date2;
 	date3.setDate( date2.getDate() - date1.getDate() ); 
 	alert( date3.getDate() );
+~~~
 
-
-// objeto Math
+# objeto Math
+~~~javascript
 var x = Math.PI; 		// constante de PI
 var x = Math.E;			// constante de Euler
 var x = Math.LN2;		// logaritmo natural de 2
@@ -198,8 +205,11 @@ var x = Math.round(125.6);	// arredonda valor seguindo regra
 var x = Math.random();		// Retorna um número aleatório entre 0 e 1 com até 15 dígitos
 	// exemplo legal:
 	var x = Math.floor( Math.random() * 100 ) + 1;	// aleatórios de 1 a 100
+~~~
 
+# algumas funções legais
 
+~~~javascript
 // getElementById
 document.getElementById("demo").innerHTML = "Hello JavaScript!";
 document.getElementById("myImage").src = "imagem.png";
@@ -210,12 +220,10 @@ x = document.getElementById("demo").innerHTML;
 
 // getElementsByClassName
 
-
 // event listner
 
-
 // expressões regulares
-
+~~~
 
 
 
