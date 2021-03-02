@@ -77,6 +77,13 @@
     git status              # verifica o status de todos arquivos do repositório 
     git push                # "empurrar" publica em um servidor remoto os commits feitos localmente. 
 
+    git branch                  # lista todas as branches do repositorio
+    git branch nome-da-branch   # cria uma branch
+    git checkout nome-da-branch # vai para a branch nome-da-branch
+    git fetch                   # obter branches do repositorio remoto
+    git merge                   # juntar branches com a master // resolução de conlfitos
+
+
     git remote add origin umaURL    # marca para onde serao enviados os arquivos // origin é apenas um apelido convencionado para nao precisarmos digitar todo o tempo https://... 
     git remote -v                   # lista todos repositórios remotos cadastrados
     git push origin master          # "empurra" (push) o código commitado no repositório local para o repositório remoto 
@@ -84,9 +91,8 @@
 
     git clone               # obtem um clone de um projeto que está no github (repositório remoto) na sua máquina. Já baixa como um repositório local 
     git log                 # mostra o histórico de alterações gravadas no repositório 
-    git merge               # juntar branches com a master // resolução de conlfitos
-    git branch              # listar todas as branchs criadas no repositório local 
-    git branch nomeBranch   # cria uma branch (ramo)
+    
+
 
 ~~~
 
@@ -126,8 +132,8 @@
 
 # dúvidas
 
-- Fazer pequenos commits e um push uma vez só numa branch?
 - Em que situações e com que frequência eu crio uma branch? A cada nova alteração?
+- Fazer pequenos commits e um push uma vez só numa branch?
 - exemplos do email do professor gastal
 - Dúvidas interface - ver print
 
@@ -135,17 +141,28 @@
 ## Na primeira vez sigo este fluxo?
 ~~~shell
     git clone https://github.com/eslgastal/sibgrapi2021-webpage.git
-    # realizo as modificações
+    
+    # realizo as modificações nos arquivos aqui ...
+    
+    git branch nome-da-branch
+    git checkout nome-da-branch
+
     git add *
     git commit -m "Descricao das alteracoes feitas"
-    git push origin qualBranch? 
+    
+    git push origin nome-da-branch 
 ~~~
 
 ## Na segunda vez em diante eu sigo esse fluxo?
 ~~~shell
     git pull origin master
-    # realizo as modificações
+    
+    # realizo as modificações nos arquivos aqui ...
+
+    git branch nome-da-branch
+    git checkout nome-da-branch
+    
     git add *
     git commit -m "Descricao das alteracoes feitas"
-    git push origin qualBranch? 
+    git push origin nome-da-branch
 ~~~
