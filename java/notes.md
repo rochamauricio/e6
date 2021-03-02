@@ -1,23 +1,22 @@
-// Anotações sobre a linda linguagem Java
+# compilando um .java no shell do ubuntu:
+~~~shell
+   javac nomeArquivo.java
+~~~
 
-// Compilando um .java no shell do ubuntu:
-javac nomeArquivo.java
-
-// Executando o arquivo compilado:
-java nomeArquivo	// sem o ".java" e sem o ".class"
-
-
-/*
-Observações:
-
-Dentro do arquivo o nome da classe precisa ter o mesmo nome do arquivo '.java' em que a classe está.
+# executando o arquivo compilado:
+~~~shell
+   java nomeArquivo	# sem o ".java" e sem o ".class"
+~~~
 
 
-*/
+# anotações
+
+   Dentro do arquivo o nome da classe precisa ter o mesmo nome do arquivo '.java' em que a classe está.
 
 
-/*---------------------------------------------------------*/
+# java
 
+~~~java
 //  comentário de uma linha
 /*  comentário de várias linhas  */
 /** comentário estilo javadoc    */ 
@@ -48,8 +47,7 @@ Dentro do arquivo o nome da classe precisa ter o mesmo nome do arquivo '.java' e
 
 
 // Sequências de escape:  
-\n	\t	\r	\\	\" 
-
+\n	\t	\r	\\	 
 
 // Tipos primitivos de dados:  
 boolean, byte, char, short, int, long, float, double
@@ -141,7 +139,7 @@ double valor = input.nextDouble();			// por algum motivo usa ',' como  separador
 String nome = input.nextLine(); 			// Lê uma linha até pressionar enter
 String nome = input.next(); 				// Lê uma palavra até presisonar espaço
 
-
+~~~
 
 AGLUTINAR COM O NOTES DO WORKSPACE ANTIGO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
