@@ -130,20 +130,17 @@
 [ver](https://www.youtube.com/watch?v=CGTsIz5t0eY)
 
 
-# dúvidas
-
-- Em que situações e com que frequência eu crio uma branch? A cada nova alteração?
-- Fazer pequenos commits e um push uma vez só numa branch?
-- exemplos do email do professor gastal
-- Dúvidas interface - ver print
-
 
 ## Na primeira vez sigo este fluxo?
 ~~~shell
+
+    # navego até o diretorio onde será o meu repositorio local
+
     git clone https://github.com/eslgastal/sibgrapi2021-webpage.git
     
     # realizo as modificações nos arquivos aqui ...
     
+    # crio uma branch
     git branch nome-da-branch
     git checkout nome-da-branch
 
@@ -153,7 +150,7 @@
     git push origin nome-da-branch 
 ~~~
 
-## Na segunda vez em diante eu sigo esse fluxo?
+## Na segunda vez em diante eu sigo este fluxo?
 ~~~shell
     git pull origin master
     
@@ -166,3 +163,11 @@
     git commit -m "Descricao das alteracoes feitas"
     git push origin nome-da-branch
 ~~~
+
+
+# dúvidas
+
+- Em que situações e com que frequência eu crio uma branch? A cada nova alteração?
+- Fazer pequenos commits e um push uma vez só numa branch?
+- exemplos do email do professor gastal
+- Dúvidas interface - ver print
