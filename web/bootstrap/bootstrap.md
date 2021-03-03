@@ -9,8 +9,9 @@
 
 # anotações
 
-- o bootstrap divide a tela em 12 partes
-- baixar bootstrap (getbootstrap.com): docs -> Compiled CSS and JS
+- o bootstrap divide a tela em 12 partes;
+- baixar bootstrap (getbootstrap.com): docs -> Compiled CSS and JS;
+- encontre estilos em (getbootstrap.com): docs -> components;
 
 # classes 
 
