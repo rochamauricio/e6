@@ -27,6 +27,15 @@
 .col-xl-      /* xlarge devices - screen width equal to or greater than 1200px */
 ~~~
 
+# height
+~~~css
+.h-25   /* height 25% */
+.h-50
+.h-75
+.h-100
+.mh-100 /* max-height 100% */
+~~~
+
 ## display 
 
 ~~~css
