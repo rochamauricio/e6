@@ -1,3 +1,7 @@
+# indentação
+
+> Em HTML, css e JS utilizamos 2 espaços com indentação
+
 # estrutura da página
 
 ~~~ html
@@ -5,7 +9,7 @@
 <!DOCTYPE html>	<!--indica que versão=html5 -->
 <html>
 <head>
-    <title>Título</title>
+  <title>Título</title>
    
    <!-- Tags Meta: Utilizadas dentro do head serve para passar instruções para programas externos.  -->
    <meta charset="UTF-8"/>

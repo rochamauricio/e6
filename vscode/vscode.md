@@ -1,6 +1,11 @@
 # Visual Studio Code
 	Possui um marketplace para baixar diretamente dele os arquivos
 
+# Anotações
+- settings.json é um arquivo que armazena configurações do editor
+- as configurações de usuário (válidas em todos projetos) ficam no diretório: /home/mauricio/.config/Code/User
+
+
 # Comandos no shell:
 
 ## Abrir o vscode: 
