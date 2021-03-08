@@ -18,7 +18,6 @@
 ## grid 
 
 ~~~css
-.container    /* */
 .row          /* */
 .col-         /* extra small devices - screen width less than 576px */
 .col-sm-      /* small devices - screen width equal to or greater than 576px */
@@ -27,20 +26,20 @@
 .col-xl-      /* xlarge devices - screen width equal to or greater than 1200px */
 ~~~
 
-# height
+## conteiners
+
 ~~~css
-.h-25   /* height 25% */
-.h-50
-.h-75
-.h-100
-.mh-100 /* max-height 100% */
+.container          /* nao ocupa toda a largura da tela */
+.container-fluid    /* ocupa toda a largura da tela */
+
 ~~~
 
-## display 
+# textos
 
 ~~~css
-.d-none          /* some */
-.d-md-block      /* mostra para tamanhos maiores que md */
+.text-center 
+.text-justified
+.display-1      /* muda tamanho de 1 a 5 */
 ~~~
 
 ## cores 
@@ -49,8 +48,10 @@
 .text-dark 
 .text-muted 
 .lead        /* deixa maior o paragrafo */
-.text-center 
-.display-1   /* muda tamanho de 1 a 5 */
+
+.bg-light
+.bg-dark
+.shadow      /* sombras */
 ~~~
 
 ## margens e paddings 
@@ -69,4 +70,36 @@
 .justify-content-center      /* centraliza */
 .justify-content-md-center   /* centraliza row na dimensão md */
 .justify-content-sm-center   /* centraliza row na dimensão sm */
+~~~
+
+# height
+
+~~~css
+.h-25   /* height 25% */
+.h-50
+.h-75
+.h-100
+.mh-100 /* max-height 100% */
+~~~
+
+## display 
+
+~~~css
+.d-none          /* some */
+.d-md-block      /* mostra para tamanhos maiores que md */
+~~~
+
+## bordas e caixas
+
+~~~css
+.rounded    /* bordas arredondadas*/
+.jumbotron  /* insere caixa legal para conteudos */
+.badge
+.badge-info /* caixa legal para texto */
+~~~
+
+## imagens
+
+~~~css
+.img-fluid  /* imagem responsiva */
 ~~~
