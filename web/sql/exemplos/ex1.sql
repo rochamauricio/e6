@@ -1,11 +1,11 @@
 -- exemplo legal de criação de tabela
 CREATE TABLE funcionarios(
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nome VARCHAR(50) NOT NULL,
-    email VARCHAR(80) NOT NULL,
-    salario DECIMAL(10,2) NOT NULL,
-    nascimento DATE NOT NULL,
-    PRIMARY KEY (id)
+  id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(50) NOT NULL,
+  email VARCHAR(80) NOT NULL,
+  salario DECIMAL(10,2) NOT NULL,
+  nascimento DATE NOT NULL,
+  PRIMARY KEY (id)
 ) COLLATE=utf8_unicode_ci;
 
 -- inserindo valores

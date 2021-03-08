@@ -1,3 +1,15 @@
+# tarefas:
+	instalar a versão 3 do python
+	usar o google colab
+
+	analisar dados: pandas
+	ler ia: skit learn
+	numpy
+	mathplot
+
+	ricardo enviou - ler PDFs:
+		https://colab.research.google.com/drive/1VLpWnbukrw9OgIvuBFtmDSOTZO4Mmkl_?usp=sharing
+
 # apostila - python versão 3.7
 
 # anotações
