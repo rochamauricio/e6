@@ -75,7 +75,7 @@ print(18/4.0)  # == 4.5
 print(18//4.0) # == 4.0 força a divisão inteira
 ~~~
 
-# operadores aritmeticos aritimetica
+# operadores aritmeticos
 
 ~~~python
 ** # x=2**3 faz 2 ^ 3
