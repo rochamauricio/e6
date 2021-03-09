@@ -128,30 +128,35 @@ eval()     # avalia o valor da expressão argumento
 # listas 
 
 > podem ter dados de varios tipos juntos e até outras listas
+> podem ter listas aninhadas
 
 ~~~python
-alunos = []                            # cria uma lista vazia
-valores = [1, 2, 3, 4]                 # cria uma lista com inteiros
-nomes = ["Mauricio", "Maria", "Jose"]  # print(nomes) vai printar nomes com colchetes
+lista = []                             # cria lista vazia, outra forma: alunos = list()
+lista = [1, 2, 3, 4]                   # cria lista 
+lista = ["Mauricio", "Maria", "Jose"]  # cria lista
+lista = list("abc")                    # cria lista ['a', 'b', 'c']  
+lista = range(0, 3)                    # cria lista ['0', '1', '2']   
 
-alunos.append("Marieta")               # insere string
-alunos.append(nome)                    # insere variavel
+lista.append("Marieta")                # insere no fim da lista
+lista.append(nome)                     # insere variavel (ou outra lista) no fim da lista
 
-nomes.pop()                            # remove o ultimo elemento da lista
-nomes.pop(1)                           # remove o elemento de indice 1 da lista
-nomes.remove("Mauricio")               # remove pelo valor do elemento
-del nomes[0]                           # comando para deletar elemento da lista - apaga variáveis quaisquer
+lista.pop()                            # remove o ultimo elemento da lista
+lista.pop(1)                           # remove o elemento de indice 1 da lista
+lista.remove("Mauricio")               # remove pelo valor do elemento
+del lista[0]                           # deleta elemento da lista - apaga qualquer variavel
 
-nomes.insert(1, "Jesus")               # insere Jesus na posição 1
+lista.insert(1, "Jesus")               # insere Jesus na posição 1
 
-nomes.reverse()                        # inverte ordem da lista
-nomes.sort()                           # ordena elementos em ordem alfabetica / numerica
+lista.reverse()                        # inverte ordem da lista
+lista.sort()                           # ordena elementos em ordem alfabetica / numerica
 
-nomes.count("Mauricio")                # conta quantas vezes mauricio aparece na lista
+lista.count("Mauricio")                # conta quantas vezes mauricio aparece na lista
 
-print(nomes)                           # printa lista
-print nomes[0]                         # printa primeiro elemento da lista
-print "Mauricio" in nomes              # printa true se "Mauricio" pertencer à lista nomes - in é um operador!
+print(lista)                           # printa lista
+print lista[0]                         # printa primeiro elemento da lista
+print "Mauricio" in lista              # printa true se "Mauricio" pertencer à lista lista - in é um operador!
+
+lista = [[10, 20, 30], 4, 5, 6]        # lista aninhada lista[0][0] == 10
 ~~~
 
 # comando if
@@ -201,7 +206,7 @@ else:
 
 # parei em
 
-- apostila: parei em 12.2
+- apostila: parei em 14
 
 
 
