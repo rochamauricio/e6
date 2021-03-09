@@ -101,5 +101,6 @@
 ## imagens
 
 ~~~css
-.img-fluid  /* imagem responsiva */
+.img-fluid        /* imagem responsiva */
+.rounded-circle   /* imagem fica redonda */
 ~~~
