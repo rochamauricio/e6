@@ -64,10 +64,10 @@ comentarios de várias linhas
 ~~~python
 """
 Operadores aritmeticos:
-  **  // (divisao inteira)    %     /    +  
+  **  // (divisao inteira)    %    *    /    +    -
 
 Operadores relacionais:
-  > ==  !=  >=  >  <=  <
+  >    ==     !=    >=    >    <=    <
 
 Caracteres de escape:
   \n \t \\ \" \' \v
@@ -77,25 +77,11 @@ Caracteres de escape:
 # Tipos de dados:
 
 > para declarar uma variável, você só precisa dar a ela algum valor
-> ex.: idade = 30
 
 ~~~python
 x = 2     # int
 x = 2.1   # float
 x = True  # bool: True ou False
-~~~
-
-# Comandos de saída:
-
-## print:
-> %f, %i
-
-~~~python
-print("bem vindo " + nome)  
-print("valor = " + str(x))  # concatena string com o inteiro 
-print("valor = %i" %x)      # concatena string com o inteiro 
-print("valor = %0.4f" %x)   # concatena string com o float 4 casas
-print("mauricio" * 3)       # repete mauricio 3 vezes
 ~~~
 
 # Comandos de entrada:
@@ -105,6 +91,37 @@ x = input("seu nome ")        # no python 3 - captura uma string sempre
 x = raw_input("seu nome ")    # no python 2 - captura uma string sempre
 a = int(input())
 ~~~
+
+# Comandos de saída:
+
+> %f, %i
+
+~~~python
+print("bem vindo " + nome)            # so concatena string com string
+print("valor = " + str(x))            # x inteiro 
+print("valor = %i" %x)                # concatena string com o inteiro 
+print("valor = %0.4f" %x)             # concatena string com o float 4 casas
+print("mauricio" * 3)                 # repete mauricio 3 vezes
+~~~
+
+# Strings:
+
+> format()
+
+~~~python
+print("x = {} y = {}".format(x, y))                 # format
+print("MEDIA = {:.1f}".format(media))               # formata com 1 casa decimal
+print("x = {soma} y = {sub}".format(soma=x, sub=y)) # outra forma
+~~~
+
+> Comparando Strings:
+
+~~~python
+print "casa" < "escola"   # printa True (casa vem antes no dicionário)
+print "casa" == "escola"  # printa False
+~~~
+
+
 
 # Comando if:
 
@@ -152,6 +169,7 @@ else:
 # Funções úteis:
 
 ~~~python
+type(var)  # retorna tipo da var
 int()      # converte string ou float em inteiro, ex: x = int(7.5) -> irá truncar
 float()    # converte string ou float em float, ex: x = int(7)
 str()      # converte qualquer valor em string, ex: x = str(x)
@@ -165,13 +183,6 @@ eval()     # avalia o valor da expressão argumento
 ~~~
 
 # Strings:
-
-## Comparando Strings:
-
-~~~python
-print "casa" < "escola"   # printa True (casa vem antes no dicionário)
-print "casa" == "escola"  # printa False
-~~~
 
 # Listas 
 
@@ -207,5 +218,16 @@ print lista[0]                 # printa primeiro elemento da lista
 print "Mauricio" in lista      # printa true se "Mauricio" pertencer à lista lista - in é um operador!
 
 lista = [[10, 20, 30], 4]      # lista aninhada lista[0][0] == 10
+~~~
+
+# Exercícios:
+
+> Tabuada
+
+~~~python
+x = int(input("Digite um numero: "))
+for i in range(0, 11):
+  prod = x * i
+  print("%i * %i = %i" %(i, x, prod) )
 ~~~
 

@@ -57,6 +57,8 @@
 	seleciona palavra
 	ctrl + F2
 
+## Comentar trecho
+	ctrl + / 
 
 
 
