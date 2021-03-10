@@ -1,24 +1,34 @@
 # links 
 
-https://www.w3schools.com/python/
+[w3schools](https://www.w3schools.com/python/)
+
+[docs.python](https://docs.python.org/pt-br/3/)
 
 # anotações
 
->  extensão arquivos python: .py
+- Extensão arquivos python: .py
+- Usos do Python
+  - Web:
+    - Django, Flask, Pyramid, Tornado, ...
+  - Desktop:
+    - Tkinter, PyQT, Kivy
+  - Ciência de dados
+    - SciPy, Pandas, IPython, ...
+
 
 # comandos no Shell
 
 ~~~shell
-  # versão
-  python -V
+  # versão 3
+  python3 -V
 
   # executar python no terminal
-  python
+  python3
   >>> comandos aqui
-  >>> exit() #sai do python
+  >>> exit() # ou ctrl+d sai do python
 
   # executar um programa:
-  python nomePrograma.py      
+  python3 nomePrograma.py      
 ~~~
 
 
@@ -48,16 +58,15 @@ comentarios de várias linhas
 
 # comandos de saida
 
+## print
+> %f, %i
+
 ~~~python
-print("texto")
-print(90 + 10)
-print(nome)      
-print("bom" + "Dia")
-print("mauricio" * 3)              # repete mauricio 3 vezes
-print("Idade:", 28, "Ano:", 2020)  # printa com parenteses
-print "Idade:", 28, "Ano:", 2020   # printa sem parenteses
-print("bem vindo " + nome)
-print "Bom dia", nome, "ano", ano  # insere espacos
+print("bem vindo " + nome)  
+print("valor = " + str(x))  # concatena string com o inteiro 
+print("valor = %i" %x)      # concatena string com o inteiro 
+print("valor = %0.4f" %x)   # concatena string com o float 4 casas
+print("mauricio" * 3)       # repete mauricio 3 vezes
 ~~~
 
 # comandos de entrada
@@ -65,6 +74,7 @@ print "Bom dia", nome, "ano", ano  # insere espacos
 ~~~python
 x = input("seu nome ")        # no python 3 - captura uma string sempre
 x = raw_input("seu nome ")    # no python 2 - captura uma string sempre
+a = int(input())
 ~~~
 
 # divisao inteira
