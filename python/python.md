@@ -30,7 +30,7 @@
     - Scikit Learn, ...
 
 
-- Parei em: 19 pg 70
+- Parei em: pg 77
 
 
 # Comandos no Shell:
@@ -74,6 +74,9 @@ Operadores aritmeticos:
 Operadores relacionais:
   >    ==     !=    >=    >    <=    <
 
+Operadores lógicos:
+and or not
+
 Caracteres de escape:
   \n \t \\ \" \' \v
 """
@@ -114,9 +117,9 @@ print("mauricio" * 3)                 # repete mauricio 3 vezes
 > format()
 
 ~~~python
-print("x = {} y = {}".format(x, y))                 # format
-print("MEDIA = {:.1f}".format(media))               # formata com 1 casa decimal
-print("x = {soma} y = {sub}".format(soma=x, sub=y)) # outra forma
+print("x = {} y = {}".format(x, y))         # format
+print("MEDIA = {:.1f}".format(media))       # formata com 1 casa decimal
+print("x = {a} y = {b}".format(a=x, b=y))   # apelidos a e b
 ~~~
 
 > Comparando Strings:
@@ -129,6 +132,8 @@ print "casa" == "escola"  # printa False
 
 
 # Comando if:
+
+> há tambem o elif
 
 ~~~python
 if i >= 6:
@@ -187,8 +192,6 @@ len()      # devolve o tamanho da string ou o da lista, ex: print len(minhaLista
 eval()     # avalia o valor da expressão argumento
 ~~~
 
-# Strings:
-
 # Listas 
 
 > podem ter dados de varios tipos juntos e até outras listas
@@ -200,6 +203,7 @@ lista = [1, 2, 3, 4]           # cria lista
 lista = ["Mauricio", "Maria"]  # cria lista
 lista = list("abc")            # cria lista ['a', 'b', 'c']  
 lista = range(0, 3)            # cria lista ['0', '1', '2']   
+lista = range(0, 10, 1)        # cria lista 0 a 9 de 1 em 1 
 
 lista.clear()                  # limpa a lista
 
