@@ -6,6 +6,11 @@
 
 [ler PDFs - link Ricardo](https://colab.research.google.com/drive/1VLpWnbukrw9OgIvuBFtmDSOTZO4Mmkl_?usp=sharing)
 
+# Tarefas:
+
+- Estudar funçãos JavaScript do Bootstrap
+
+
 # Anotações:
 
 - Extensão arquivos python: .py
